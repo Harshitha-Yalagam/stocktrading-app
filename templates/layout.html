@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Trading App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        {% if session.user_id %}
+            <a href="/">Portfolio</a> | <a href="/buy">Buy</a> | <a href="/sell">Sell</a> | <a href="/history">History</a> | <a href="/logout">Logout</a>
+        {% else %}
+            <a href="/login">Login</a> | <a href="/register">Register</a>
+        {% endif %}
+    </nav>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+</body>
+</html>
