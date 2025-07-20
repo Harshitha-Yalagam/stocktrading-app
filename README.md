@@ -4,6 +4,11 @@ A full-stack stock trading simulation platform built with Flask and SQLite, wher
 
 ---
 
+## 🚀 Live Demo
+
+Try it out here:  
+🔗 [https://stocktrading-app-1vdr.onrender.com](https://stocktrading-app-1vdr.onrender.com)
+
 ##  Features
 
 -  User authentication and session management
